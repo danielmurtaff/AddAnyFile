@@ -71,7 +71,10 @@ namespace MadsKristensen.AddAnyFile
                     input = input + "__dummy__";
                 }
 
-                var file = new FileInfo(Path.Combine(folder, input));
+                var timestamp = DateTime.UtcNow.ToString("yyyyMMddHHmmss");
+                var inputWithTimestamp = $"{timestamp} - {input}";
+
+                var file = new FileInfo(Path.Combine(folder, inputWithTimestamp));
                 string dir = file.DirectoryName;
 
                 PackageUtilities.EnsureOutputPath(dir);
