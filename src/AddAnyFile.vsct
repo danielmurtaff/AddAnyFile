@@ -11,7 +11,7 @@
                 <CommandFlag>DynamicVisibility</CommandFlag>
                 <Strings>
                     <CommandName>AddEmptyFile</CommandName>
-                    <ButtonText>New Empty File...</ButtonText>
+                    <ButtonText>New Migration...</ButtonText>
                 </Strings>
             </Button>
         </Buttons>
