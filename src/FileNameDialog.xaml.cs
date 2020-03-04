@@ -22,7 +22,7 @@ namespace MadsKristensen.AddAnyFile
         {
             InitializeComponent();
 
-            lblFolder.Content = string.Format("{0}/", folder);
+            lblFolder.Content = string.Format("{0}/", folder.Replace("_", "__"));
 
             Loaded += (s, e) =>
             {

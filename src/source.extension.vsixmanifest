@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="2E78AA18-E864-4FBB-B8C8-6186FC865DB3" Version="1.0" Language="en-US" Publisher="Daniel Murta" />
+    <Identity Id="68ACD1E1-1F94-4820-94CD-D78A9B7C4B37" Version="1.0" Language="en-US" Publisher="Daniel Murta" />
     <DisplayName>Add New Migration</DisplayName>
     <Description xml:space="preserve">The fastest and easiest way to add new migrations (timestamped file names) to any project</Description>
     <MoreInfo>https://visualstudiogallery.msdn.microsoft.com/3f820e99-6c0d-41db-aa74-a18d9623b1f3</MoreInfo>

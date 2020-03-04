@@ -40,6 +40,20 @@ namespace MadsKristensen.AddAnyFile
             }
         }
 
+        /// <summary>
+        /// Get the string slice between the two indexes.
+        /// Inclusive for start index, exclusive for end index.
+        /// </summary>
+        private static string Slice(string source, int start, int end)
+        {
+            if (end < 0) // Keep this for negative end support
+            {
+                end = source.Length + end;
+            }
+            int len = end - start;               // Calculate length
+            return source.Substring(start, len); // Return Substring of length
+        }
+
         private async void ExecuteAsync(object sender, EventArgs e)
         {
             object item = ProjectHelpers.GetSelectedItem();
@@ -73,6 +87,14 @@ namespace MadsKristensen.AddAnyFile
 
                 var timestamp = DateTime.UtcNow.ToString("yyyyMMddHHmmss");
                 var inputWithTimestamp = $"{timestamp} - {input}";
+                if (input.LastIndexOf('\\') != 0)
+                {
+                    var path = Slice(input, 0, input.LastIndexOf('\\')+1);
+                    var filename = input.Substring(input.LastIndexOf('\\')+1);
+
+                    inputWithTimestamp = $"{path}{timestamp} - {filename}";
+                }
+                
 
                 var file = new FileInfo(Path.Combine(folder, inputWithTimestamp));
                 string dir = file.DirectoryName;

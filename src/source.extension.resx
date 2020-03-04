@@ -121,7 +121,7 @@
     <value>Add New Migration</value>
   </data>
   <data name="112" xml:space="preserve">
-    <value>The fastest and easiest way to add new files to any project - including files that start with a dot</value>
+    <value>The fastest and easiest way to add new migration files to any project - including files that start with a dot</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="400" type="System.Resources.ResXFileRef, System.Windows.Forms">
